@@ -1,0 +1,128 @@
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Raleway:ital,wght@0,100;0,400;1,100;1,600&display=swap');
+:root{
+
+    --color1: #023047;
+    --color2: #219ebc;
+    --color3: #8ecae6;
+    --color4: #ffb703;
+    --color5: #ffffff; 
+}
+* {
+    
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+
+/* Estilos del grid */
+
+.container{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 12vh 80vh 8vh;
+    justify-content: stretch;
+    position: relative;
+}
+
+.nav{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.formulario{
+	grid-area: 2 / 1 / 3 / 2;
+    font-family: 'Montserrat';
+    border-radius: 30px;
+}
+footer{
+	grid-area: 3 / 1 / 4 / 2;
+    font-family: 'Montserrat';
+}
+/* Estilo Formulario */
+.formulario {
+    grid-area: 2 / 1 / 3 / 2;
+    font-family: 'Montserrat';
+    background: var(--color3);
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 7px 13px 37px rgba(0, 0, 0, .8); */
+}
+
+.avion {
+    width: 100%;
+    background: var(--color1);
+    overflow: hidden;
+    color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.avion span {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: .5rem;
+}
+
+.form {
+    padding: .8rem;
+    overflow: hidden;
+}
+
+.form label, .form input, .form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+}
+
+.form input:not([type='submit']), .form textarea {
+    border: none;
+    border-bottom: 2px solid var(--color1);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+.form textarea {
+    min-height: 100px;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    background: var(--color1);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.mensajeEnviado{
+    position: relative;
+    font-family: 'Montserrat';
+    height: 25vh;
+    width: 25vw;
+    background-color: var(--color2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.mensajeEnviado span{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.mensajeEnviado button{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

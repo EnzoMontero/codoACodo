@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <!-- Titulo -->
+            <title>Transportando Sueños</title>
+            <!-- Google Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100;1,600&display=swap" rel="stylesheet">
+            <!-- Css -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="/assets/css/fondo.css">
+            <link rel="stylesheet" href="../css/nav-bar.css">
+            <link rel="stylesheet" href="../css/contacto.css" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="/media/images/favicon/android-chrome-192x192.png" type="image/x-icon">
+    </head>
+    <body class="container">
+        <nav>
+                <span class="empresa">Transportando Sueños</span>
+                <ul class="link-nav">
+                    <li>
+                        <a href="/Index.html" class="link">¿Quienes somos?</a>
+                    </li>
+                    <li>
+                        <a href="./planes.html" class="link">Planes</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html" class="link">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./ubicacion.html" class="link">Ubicación</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="formulario">
+                <div class="avion">
+                <span>
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </span>
+                </div>
+                <form class="form" id="sheet-form" action="https://sheetdb.io/api/v1/simi1yj1v3xop"
+                method="POST">
+                    
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="data[nombre]" id="nombre">
+                    
+                    <label for="correo">Correo</label>
+                    <input type="email" name="data[email]" id="email">
+                    
+                    <label for="telefono">telefono</label>
+                    <input type="tel" name="data[telefono]" id="telefono">
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="data[mensaje]" id="mensaje"></textarea>
+                    <input id="btn-enviar" type="submit" value="Enviar">
+                </form>
+            </main>
+            <footer>   
+                Copyright © 2023 | Full-Stack python Codo a Codo
+            </footer>
+            <div class="mensajeEnviado" id="mensajeEnviado">
+                <span>Mensaje enviado correctamente</span><br>
+                <span>Muchas gracias!</span>
+                <button onclick="ocultarMensajeEnviado()">Cerrar</button>
+            </div>
+            <!-- JavaScript -->
+            <script src="/assets/js/contacto.js"></script>
+            <!-- SheetDB -->
+            <script src="https://sheetdb.io/handlebars.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Raleway:ital,wght@0,100;0,400;1,100;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --color1: #023047;
+    --color2: #219ebc;
+    --color3: #8ecae6;
+    --color4: #ffb703;
+    --color5: #ffffff; 
+}
+* {
+
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+/* Estilos del nav */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+nav {
+	position: relative;
+    font-family: 'Montserrat';
+	color: black;
+	display: flex;
+	align-items: center;
+    justify-content: right;
+    width: 100vw;
+	height: 12vh;	
+}
+.link-nav {
+    padding: 10px;
+	list-style: none;
+	display: flex;
+	gap: 25px;
+}
+.link {
+	position: relative;
+	display: inline-block;
+}
+.link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	border-radius: 4px;
+	scale: 0 1;
+	transform-origin: right;
+	transition: scale 0.25s;
+}
+.link:hover::before {
+	scale: 1;
+	transform-origin: left;
+}
+.empresa{
+	color: var(--color4);
+	font-family: 'Pacifico', cursive;
+	font-size: xx-large;
+	position: absolute;
+	left: 10px;
+}
